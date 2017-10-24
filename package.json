@@ -1,11 +1,24 @@
 {
   "name": "node-request",
   "version": "1.0.0",
-  "description": "",
   "main": "node-req.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "request": "^2.83.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MahrukhK/node-request.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MahrukhK/node-request/issues"
+  },
+  "homepage": "https://github.com/MahrukhK/node-request#readme",
+  "description": ""
 }
