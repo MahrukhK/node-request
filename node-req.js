@@ -1,20 +1,8 @@
-const http = require('http');
 
-const request = http.get('http://www.google.ca/', (response) => {
-    let body = "";
+var request = require('request');
 
-    response.on('data', (chunk) => {
-        body +=chunk;
-    
-});
-
-response.on ('end', () => {
-    if (response.statusCode === 200) {
-        try {
-            console.log(JSON.parse(body));
-        } catch (e) {
-            console.log ('Error!');
-        }
-    }
-});
+request('http://www.google.com', function (error, response, body) {
+  console.log('error:', error); // Print the error if one occurred
+  console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
+  console.log('body:', body); // Print the HTML for the Google homepage.
 });
